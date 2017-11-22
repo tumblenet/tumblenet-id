@@ -1,0 +1,20 @@
+extends layout-single
+
+block content
+  form(method="post", class="login-form")
+    |Username
+    input(type="text", name="username", class="tn-element-color-main-grey-light4")
+    br
+    |Password
+    input(type="password", name="password", class="tn-element-color-main-grey-light4")
+    br
+    br
+    input(type="submit", value="Login", class="tn-btn tn-element-color-main-red tn-element-color-onhover-main-red-dark3 btn-primary tn-btn-disabled")
+  
+  div(class="tn-separator")
+  
+  include oauth_links
+  
+  div(class="register-button tn-row")
+    div(class="tn-col-1-1")
+      a(href='/register', class=" tn-btn tn-element-color-main-red tn-element-color-onhover-main-red-dark3 btn-primary") Create a new Account

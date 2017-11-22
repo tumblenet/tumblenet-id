@@ -1,0 +1,6 @@
+/login -> login page
+/register -> registration
+/password/reset -> forgot password
+/ -> account
+/security -> password settings
+/logout -> logout page

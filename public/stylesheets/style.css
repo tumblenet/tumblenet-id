@@ -1,0 +1,59 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.login-container {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.login-form input {
+  min-height: 50px;
+  padding: 12px 14px;
+  border-width: 3px;
+}
+
+.login-form input.tn-btn {
+  width:100%;
+}
+
+[type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], select, textarea {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    margin: 0;
+    padding: 6px 14px;
+    border: 0px solid white;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.btn-primary {
+    border: none;
+}
+
+.tn-btn, .SettingTitle_action {
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 1.29;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 0;
+    border: 2px solid transparent;
+    background-image: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+a.tn-btn {
+  display:block;
+}

@@ -1,0 +1,4 @@
+div(class="oauth-buttons tn-row")
+  for service in site.oauthServices
+    div(class="tn-col-1-" + (site.oauthServices.length>2?2:site.oauthServices.length))
+      a(href=service.url, class="tn-btn", style="color:" + service.color.text + "; background:" + service.color.background + ";") Login with #{service.title}
