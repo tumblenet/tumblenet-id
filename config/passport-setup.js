@@ -1,15 +1,7 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20');
 
-var GetEnvKeys = function() {
-  var keys;
-    JSON.parse(process.env.OAUTH_KEYS, function (key, value) {
-      keys = value;
-    });
-    return keys;
-}
-
-const keys =  GetEnvKeys() || require('./keys');
+const keys = JSON.parse(process.env.OAUTH_KEYS || require('./keys'));
 
 function getKeys(strategy) {
   var wantedKeys = keys[strategy];
